@@ -16,31 +16,32 @@ public class CadastroDeLivros {
         
         
         Autor autor = new Autor();
-        autor.nome = "Rodrigo Turini";
-        autor.email = "rodrigo.turini@caulum.com.br";
-        autor.cpf = "123.456.789.10";
+        autor.setNome ("Rodrigo Turini");
+        autor.setEmail ("rodrigo.turini@caulum.com.br");
+        autor.setCpf ("123.456.789.10");
 
-        Livro livro = new Livro();
-        livro.valor = 59.90;
+        Livro livro = new Livro(autor);
+        livro.setValor (59.90);
         livro.aplicaDescontoDe(0.1);
-        livro.nome = "Java 9 Prático";
-        livro.descricao = "Novos recursos da liinguagem";
-        livro.isbn = "978-85-66250-46-6";
-
-        livro.autor = autor;
+        livro.setNome ("Java 9 Prático");
+        livro.setDescricao ("Novos recursos da linguagem");
+        livro.setIsbn ("978-85-66250-46-6");
 
         livro.mostrarDetalhes();
-
-        Livro outroLivro = new Livro();
-        outroLivro.nome = "Lógica de Programação";
-        outroLivro.descricao = "Crie seus primeiros programas";
-        outroLivro.valor = 59.90;
-        outroLivro.isbn = "978-85-66250-22-0";
-
-        outroLivro.autor = autor;
+        
+        Autor outroAutor = new Autor();
+        outroAutor.setNome ("Paulo Silveira");
+        outroAutor.setEmail ("pulo.silveira@caelum.com.br");
+        outroAutor.setCpf ("123.456.789.10");
+        
+        Livro outroLivro = new Livro(outroAutor);
+        outroLivro.setNome ("Lógica de Programação");
+        outroLivro.setDescricao ("Crie seus primeiros programas");
+        outroLivro.setValor (59.90);
+        outroLivro.setIsbn ("978-85-66250-22-0");
 
         outroLivro.mostrarDetalhes();
-
+       
     }
 
 }
