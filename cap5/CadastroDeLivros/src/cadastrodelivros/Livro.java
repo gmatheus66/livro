@@ -1,7 +1,7 @@
 package cadastrodelivros;
 
 
-public class Livro {
+public abstract class Livro {
     
     private String nome;
     private String descricao;
@@ -61,14 +61,14 @@ public class Livro {
     }
     
     public boolean aplicaDescontoDe(double porcentagem) {
-            if (porcentagem > 0.3){
+            if (porcentagem > 0.5){
                 return false;
             }
             else if(!this.impresso && porcentagem > 0.15){
                 return false;
             }
             this.valor-= this.valor * porcentagem;
-            return true;
+            return false;
         }
     
     void mostrarDetalhes(){
