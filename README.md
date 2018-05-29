@@ -9,7 +9,7 @@
 
 
 
-# pasta cap2 contem desde capítulo 1 ate o capitulo 4.
+ pasta cap2 contem desde capítulo 1 ate o capitulo 4.
 
-# pasta cap5 contem desde capítulo 5 ate o capitulo 6.
-# *foram feitas novas pasta ao ter um alteraçao supstancial nos arquivos.
+ pasta cap5 contem desde capítulo 5 ate o capitulo 6.
+ *foram feitas novas pasta ao ter um alteraçao substancial nos arquivos.
