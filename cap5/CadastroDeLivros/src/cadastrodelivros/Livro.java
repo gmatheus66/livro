@@ -11,15 +11,11 @@ public abstract class Livro {
     private boolean impresso;
     
     public Livro (Autor autor){
-        this();
         this.autor = autor;
         this.impresso = true;
-    }
-    
-    public Livro(){
         this.isbn = "000-00-00000-00-0";
     }
-    
+        
     public double getValor(){
         return valor;
     }
@@ -60,8 +56,8 @@ public abstract class Livro {
         return this.autor != null;
     }
     
-    public boolean aplicaDescontoDe(double porcentagem) {
-            if (porcentagem > 0.5){
+    public abstract boolean aplicaDescontoDe(double porcentagem); 
+           /* if (porcentagem > 0.5){
                 return false;
             }
             else if(!this.impresso && porcentagem > 0.15){
@@ -69,7 +65,7 @@ public abstract class Livro {
             }
             this.valor-= this.valor * porcentagem;
             return false;
-        }
+            */
     
     void mostrarDetalhes(){
         System.out.println("Mostrando detalhes do livro");
